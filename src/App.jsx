@@ -1,7 +1,11 @@
 
 export const App = () => {
+  const age = 17;
+
   return (
   <>
+  <p>{age>=18 ? "Adult" : "Minor"}</p>
+
     <NetflixSeries/>
     <NetflixSeries/>
     <NetflixSeries/>
