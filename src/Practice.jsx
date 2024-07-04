@@ -14,12 +14,14 @@ const MyInfo = () => {
     const my_name = "Saikat Mahmud";
     let enroll = 88;
     let interest = 85;
+    
+    let myInterest = "No";
 
     const showInterest = () => {
         if(interest >= 80){
-            return "Yes";
+            return myInterest = "Yes";
         }
-        return "No";
+        return myInterest;
     };
 
     return (
@@ -28,7 +30,7 @@ const MyInfo = () => {
             <br />
             <span>Enrollment: {"20SOECE" + enroll}</span>
             <br />
-            <span>Interest On Programming: {showInterest}</span>
+            <span>Interest On Programming: {myInterest}</span>
         </>
     );
 }
