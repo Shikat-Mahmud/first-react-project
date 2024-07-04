@@ -11,14 +11,18 @@ export const App = () => {
 };
 
 const NetflixSeries = () => {
+  const movie_name = "Unlocked";
+  const movie_rating = 9.2;
+  const summary = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt amet in, harum dolor necessitatibus tenetur reiciendis itaque placeat similique adipisci eaque nemo cum maxime ullam iste ipsam dicta dolores! Ea!";
+
   return (
-    <div>
+    <>
     <div>
       <img src="img/my-img.jpg" alt="Photo" width="250px" height="auto" />
     </div>
-    <h1>Movie Title 2</h1>
-    <h2>Rating: 9.5</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt amet in, harum dolor necessitatibus tenetur reiciendis itaque placeat similique adipisci eaque nemo cum maxime ullam iste ipsam dicta dolores! Ea!</p>
-  </div>
+    <h1>Title: {movie_name}</h1>
+    <h2>Rating: {movie_rating}</h2>
+    <p>Summary: {summary}</p>
+  </>
   );
 };
