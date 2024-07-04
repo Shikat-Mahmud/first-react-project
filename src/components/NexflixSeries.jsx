@@ -1,4 +1,5 @@
 import seriesData from '../api/series.json'
+import { SeriesCard } from './SeriesCard';
 
 const NetflixSeries = () => {
   // const movie_name = "Unlocked";
@@ -13,23 +14,9 @@ const NetflixSeries = () => {
 
   return (
     <ul>
-      {seriesData.map((currElem) => {
-        return (
-        <li key={currElem.id}>
-          <div>
-            <img src={currElem.img_url} alt={currElem.name} width="250px" height="auto" />
-          </div>
-          <h1>Title: {currElem.name}</h1>
-          <h2>Rating: {currElem.rating}</h2>
-          <p>Summary: {currElem.description}</p>
-          <p>Genre: {currElem.genre}</p>
-          <p>Cast: {currElem.cast}</p>
-          <a href={currElem.watch_url} target='_blank'>
-            <button>Watch Now</button>
-          </a>
-        </li>
-        );
-      })}
+      {seriesData.map((currElem) => 
+          <SeriesCard key={currElem.id} currElem={currElem} />
+      )}
     </ul>
   );
 };
