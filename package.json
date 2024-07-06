@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^19.0.0-rc-58af67a8f8-20240628",
-    "react-dom": "^19.0.0-rc-58af67a8f8-20240628"
+    "react-dom": "^19.0.0-rc-58af67a8f8-20240628",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
