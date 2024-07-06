@@ -1,4 +1,5 @@
-import "../css/Netflix.css"
+// import "../css/Netflix.css"
+import style from "../css/Netflix.module.css"
 
 // inline css with object 
 const btn_style = {
@@ -17,14 +18,16 @@ export const SeriesCard = (props) => {
   // const { name, rating, description, genre, cast, watch_url, img_url} = props.data; // Deep Destructuring Props
 
   return (
-    <li className="card-box">
+
+    /*  hyphen is not allowed in module css. for that we need to use [] instead of "."  */
+    <li className={style["card-box"]}> 
       <div>
-        <img className="card-box-img" src={data.img_url} alt={props.data.name} />
+        <img className={style["card-box-img"]} src={data.img_url} alt={props.data.name} />
       </div>
-      <div className="card-content">
-        <h2>Name: {data.name}</h2>
+      <div className={style["card-content"]}>
+        <h2>{data.name}</h2>
         <h4 style={{fontSize: "16px"}}>Rating:  
-          <span className={data.rating >= 8.5 ? "super-hit" : "average"}>{data.rating}</span>
+          <span className={data.rating >= 8.5 ? style["super-hit"] : style.average }>{data.rating}</span>
         </h4>
         <p>Summary: {data.description}</p>
         <p>Genre: {data.genre}</p>
