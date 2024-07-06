@@ -34,3 +34,17 @@
 p {
     font-size: 16px !important;
 }
+
+.super-hit {
+    background-color: #73D2A3;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+
+.average {
+    background-color: #DCC261;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+}

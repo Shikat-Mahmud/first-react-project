@@ -23,7 +23,9 @@ export const SeriesCard = (props) => {
       </div>
       <div className="card-content">
         <h2>Name: {data.name}</h2>
-        <h4 style={{fontSize: "16px"}}>Rating: {data.rating}</h4>
+        <h4 style={{fontSize: "16px"}}>Rating:  
+          <span className={data.rating >= 8.5 ? "super-hit" : "average"}>{data.rating}</span>
+        </h4>
         <p>Summary: {data.description}</p>
         <p>Genre: {data.genre}</p>
         <p>Cast: {data.cast}</p>
