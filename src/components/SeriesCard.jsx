@@ -11,6 +11,7 @@ const btn_style = {
   marginTop: "10px",
   marginBottom: "20px",
   borderRadius: "6px",
+  fontSize: "16px"
 }
 
 export const SeriesCard = (props) => {
@@ -24,7 +25,7 @@ export const SeriesCard = (props) => {
       <div>
         <img className={style["card-box-img"]} src={data.img_url} alt={props.data.name} />
       </div>
-      <div className={style["card-content"]}>
+      <div className="flex flex-col gap-6 p-6">
         <h2>{data.name}</h2>
         <h4 style={{fontSize: "16px"}}>Rating:  
           <span className={data.rating >= 8.5 ? style["super-hit"] : style.average }>{data.rating}</span>
