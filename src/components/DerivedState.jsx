@@ -16,6 +16,11 @@ export const DerivedState = () => {
         { name: "Abir", age: 19 }
     ]);
 
+    // derived state (which can count others state's props)
+    const userCount = users.length;
+
+    console.log(userCount);
+
     return (
         <>
             <div className="main-div">
