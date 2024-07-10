@@ -16,10 +16,12 @@ export const DerivedState = () => {
         { name: "Abir", age: 19 }
     ]);
 
-    // derived state (which can count others state's props)
+    // derived state (variabel which can be computed based on others state's props)
     const userCount = users.length;
+    const userAgeAverage = users.reduce((acuum, currElem) => acuum + currElem.age,0) / userCount;
 
-    console.log(userCount);
+    // console.log(userCount);
+    // console.log(userAgeAverage);
 
     return (
         <>
@@ -33,6 +35,9 @@ export const DerivedState = () => {
                             </li>
                         );
                     })}
+                    <br />
+                    <p>Total users: <strong>{userCount}</strong></p>
+                    <p>Users Age Average: <strong>{userAgeAverage}</strong></p>
                 </ul>
             </div>
         </>
