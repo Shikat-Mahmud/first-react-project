@@ -2,6 +2,7 @@ import { DerivedState } from "./components/DerivedState";
 import { EventHandling } from "./components/EventHandling";
 import { EventPropagation } from "./components/EventPropagation";
 import { EventProps } from "./components/EventProps";
+import { LiftingStateUp } from "./components/LiftingStateUp";
 import NetflixSeries from "./components/NetflixSeries";
 import { State } from "./components/State";
 import "./css/Netflix.css"
@@ -15,7 +16,8 @@ export const App = () => {
       {/* <EventProps/> */}
       {/* <EventPropagation/> */}
       {/* <State/> */}
-      <DerivedState/>
+      {/* <DerivedState/> */}
+      <LiftingStateUp/>
     </section>
   );
 };
