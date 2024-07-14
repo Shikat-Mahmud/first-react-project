@@ -11,13 +11,13 @@ export const App = () => {
   return (
     <section className="container">
       <h1 className="card-heading text-5xl font-bold">List of Best Netflix Series</h1>
-      {/* <NetflixSeries /> */}
+      <NetflixSeries />
       {/* <EventHandling/> */}
       {/* <EventProps/> */}
       {/* <EventPropagation/> */}
       {/* <State/> */}
       {/* <DerivedState/> */}
-      <LiftingStateUp/>
+      {/* <LiftingStateUp/> */}
     </section>
   );
 };
